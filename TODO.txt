@@ -1,2 +1,2 @@
-[] Scricare editor Atom, togliere eclipse e netbeans
+[OK] Scaricare editor Atom, togliere eclipse e netbeans
 [] Cercare un time tracking su Atom
