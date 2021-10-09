@@ -4,16 +4,84 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
 
-  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
   <script src="js/script.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
   <title>Luca Todesco | Time tracking dashboard</title>
 
 </head>
 <body>
-
+  <div id="container">
+    <div id="container-cards">
+      <div id="profile_container">
+      </div>
+      <div id="cards">
+        <div class="card" id="card_work">
+          <div class="card_img"><img class="icon" src="images/icon-work.svg"/></div>
+          <div class="container_data">
+            <div class="padding_data">
+              <div class="title"><span class="title_name"></span><span class="dots">...</span></div>
+              <div class="time"><span class="hour"></span></div>
+              <div class="last_time"><span class="last_hour"></span></div>
+            </div>
+          </div>
+        </div>
+        <div class="card" id="card_play">
+          <div class="card_img"><img class="icon" src="images/icon-play.svg"/></div>
+          <div class="container_data">
+            <div class="padding_data">
+              <div class="title"><span class="title_name"></span><span class="dots">...</span></div>
+              <div class="time"><span class="hour"></span></div>
+              <div class="last_time"><span class="last_hour"></span></div>
+            </div>
+          </div>
+        </div>
+        <div class="card" id="card_study">
+          <div class="card_img"><img class="icon" src="images/icon-study.svg"/></div>
+          <div class="container_data">
+            <div class="padding_data">
+              <div class="title"><span class="title_name"></span><span class="dots">...</span></div>
+              <div class="time"><span class="hour"></span></div>
+              <div class="last_time"><span class="last_hour"></span></div>
+            </div>
+          </div>
+        </div>
+        <div class="card" id="card_exercise">
+          <div class="card_img"><img class="icon" src="images/icon-exercise.svg"/></div>
+          <div class="container_data">
+            <div class="padding_data">
+              <div class="title"><span class="title_name"></span><span class="dots">...</span></div>
+              <div class="time"><span class="hour"></span></div>
+              <div class="last_time"><span class="last_hour"></span></div>
+            </div>
+          </div>
+        </div>
+        <div class="card" id="card_social">
+          <div class="card_img"><img class="icon" src="images/icon-social.svg"/></div>
+          <div class="container_data">
+            <div class="padding_data">
+              <div class="title"><span class="title_name"></span><span class="dots">...</span></div>
+              <div class="time"><span class="hour"></span></div>
+              <div class="last_time"><span class="last_hour"></span></div>
+            </div>
+          </div>
+        </div>
+        <div class="card" id="card_selfcare">
+          <div class="card_img"><img class="icon" src="images/icon-self-care.svg"/></div>
+          <div class="container_data">
+            <div class="padding_data">
+              <div class="title"><span class="title_name"></span><span class="dots">...</span></div>
+              <div class="time"><span class="hour"></span></div>
+              <div class="last_time"><span class="last_hour"></span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.

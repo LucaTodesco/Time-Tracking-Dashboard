@@ -2,11 +2,171 @@
 
 :root {
   --font-family: "Rubik", sans serif;
-  --color-body: hsl(246, 80%, 60%);
+  --color-body: hsl(226, 43%, 10%);
 }
 
 
+html {
+  margin: 0;
+  padding: 0;
+}
+
 body {
+  margin: 0;
+  padding: 0;
   font-family: var(--font-family);
   background: var(--color-body);
+}
+
+#container {
+  width: 98vw;
+  height: 100vh;
+}
+
+#container-cards {
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+
+#profile_container {
+  width: 200px;
+  height: 420px;
+}
+
+#cards {
+  width: calc( (230px * 3) + 30px);
+  height: calc((210px * 2));
+  margin-left: 25px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(30%, 2fr));
+  grid-auto-rows: 198px;
+  grid-gap: 25px;
+}
+
+.card_img {
+  width: 100%;
+  height: 22%;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.container_data {
+  width: 100%;
+  height: 83%;
+  position: relative;
+  top: -6%;
+  background: hsl(235, 46%, 20%);
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.4s;
+}
+
+.container_data:hover {
+  background: hsl(235, 46%, 33%);
+}
+
+#card_work .card_img {
+  background: hsl(15, 100%, 70%);
+}
+
+#card_play .card_img {
+  background: hsl(195, 74%, 62%);
+}
+
+#card_study .card_img {
+  background: hsl(348, 100%, 68%);
+}
+
+#card_exercise .card_img {
+  background: hsl(145, 58%, 55%);
+}
+
+#card_social .card_img {
+  background: hsl(264, 64%, 52%);
+}
+
+#card_selfcare .card_img {
+  background: hsl(43, 84%, 65%);
+}
+
+.icon {
+  width: 50px;
+  height: 50px;
+  position: relative;
+  left: 155px;
+  top: -5px;
+}
+
+#card_exercise .card_img .icon {
+  height: 40px;
+  width: 50px;
+  top: -1px;
+}
+
+#card_selfcare .card_img .icon {
+  height: 45px;
+  width: 45px;
+}
+
+#card_social .card_img .icon
+{
+  width: 55px;
+  height: 65px;
+  top: 0;
+}
+
+
+.padding_data {
+  padding: 25px;
+}
+
+.padding_data span {
+  color: #fff;
+}
+
+.title {
+  font-size: 18px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.title_name {
+  font-weight: 400;
+}
+
+/* TODO trovare icon dots in modo che i punti siano rotondi */
+.dots {
+  margin-bottom: 10px;
+  color: hsl(236, 100%, 87%) !important;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.dots:hoverr {
+  color: #fff;
+}
+
+.time {
+  margin-top: 15px;
+}
+
+.hour {
+  font-size: 42px;
+  padding-top: 10px;
+  font-weight: 300;
+}
+
+.last_time {
+  margin-top: 4px;
+}
+
+.last_hour {
+  font-size: 12px;
+  color: hsl(236, 100%, 87%) !important;
+  font-weight: 300;
 }
