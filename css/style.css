@@ -139,7 +139,7 @@ body {
   font-weight: 400;
 }
 
-/* TODO trovare icon dots in modo che i punti siano rotondi */
+/* TODO trovare icon dots in modo che i punti siano rotondi (fontawesome oppure meglio un svg)*/
 .dots {
   margin-bottom: 10px;
   color: hsl(236, 100%, 87%) !important;
