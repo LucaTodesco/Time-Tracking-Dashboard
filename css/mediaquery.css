@@ -1,0 +1,94 @@
+@media screen and (max-width: 955px) {
+  #container-cards {
+    width: calc(100% - 40px);
+  }
+}
+
+@media screen and (max-width: 755px) {
+  #profile_container {
+    width: 300px;
+  }
+
+  #cards {
+    width: calc( (200px * 3) + 30px);
+    grid-template-columns: repeat(auto-fill, minmax(40%, 2fr));
+  }
+
+  .attribution {
+    margin-top: 75px;
+  }
+}
+
+@media screen and (max-width: 545px) {
+  #container-cards {
+    flex-direction: column;
+  }
+
+  #profile_container {
+    flex: 0 0 calc(100% - 40px);
+    width: auto;
+  }
+
+  #action {
+    height: 70px;
+    top: -18px;
+  }
+
+  #action li:first-child {
+    padding-top: 35px;
+    padding-left: 0;
+  }
+
+  #action li {
+    display: inline-block;
+    padding-left: 75px;
+  }
+
+  #profile_info #text {
+    top: -28px;
+    left: 110px;
+  }
+
+  #profile_info #name {
+    left: 110px;
+    top: -28px;
+    font-size: 28px;
+  }
+
+  #cards {
+    width: 100%;
+    grid-template-columns: repeat(auto-fill, minmax(100%, 2fr));
+    grid-gap: 0;
+    margin-left: 0;
+  }
+
+  .time {
+    float: left;
+    width: 50%;
+  }
+
+  .last_time {
+    float: left;
+    width: 50%;
+    display: flex;
+    justify-content: end;
+    margin-top: 30px;
+  }
+
+  .container_data {
+    height: 70%;
+  }
+
+  .attribution {
+    margin-top: 180%;
+  }
+
+  .icon {
+    top: 2px;
+  }
+
+  #action ul {
+    text-align: center;
+    padding-left: 0px;
+  }
+}
